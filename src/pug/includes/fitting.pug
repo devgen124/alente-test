@@ -1,0 +1,36 @@
+section.fitting
+  .fitting__header
+    .container
+      h2 Записаться на примерку
+      p Когда и во сколько вам удобно подъехать для снятие мерок?
+  .fitting__main
+    .container
+      form.fitting__form.form(action="#", method="post")
+        .form__inner
+          .form__group
+            .form__item.form__item--date
+              span Выберите день
+              label
+                input(type="date", name="date", value="2020-11-07")
+            .form__item.form__item--time
+              span Выберите время
+              label
+                select(name="time")
+                  option 16:30
+                  option 17:00
+                  option 17:30
+          .form__item.form__item--address
+            span Адрес ателье
+            label
+              select(name="address")
+                option ул. Марата (Санкт-Петербург)
+                option ул. Московский проспект (Санкт-Петербург)
+          .form__item.form__item--name
+            span Представьтесь пожалуйста
+            label
+              input(type="text", placeholder="Напишите своё имя")
+          .form__item.form__item--phone
+            span Ваш контактный телефон
+            label
+              input(type="tel", value="+7 850 345 789 12")
+          button.form__submit(type="submit") Записаться

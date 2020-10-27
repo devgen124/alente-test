@@ -1,0 +1,211 @@
+.form {
+  padding: 2rem 1.5rem;
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  font-family: "ProximaNova", "ProximaNovaCond", "Arial", sans-serif;
+
+  @include media($md-breakpoint) {
+    padding: 2rem 7rem;
+  }
+
+  @include media($lg-breakpoint) {
+    padding: 3rem 190px;
+
+    .form__inner {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .form__group,
+    .form__item--name {
+      width: 300px;
+      margin-right: 50px;
+    }
+
+    .form__item--address,
+    .form__item--phone {
+      width: calc(100% - 350px);
+    }
+  }
+}
+
+.form__item {
+  margin-bottom: 1.5rem;
+
+  span {
+    margin-bottom: 0.5em;
+    display: block;
+    font-family: "Georgia", serif;
+    font-size: 13px;
+    font-style: italic;
+    line-height: 18px;
+    letter-spacing: 0.025em;
+    color: $header-black;
+  }
+
+  label {
+    height: 40px;
+    position: relative;
+    display: flex;
+
+    &::before {
+      content: "";
+      width: 3rem;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  input,
+  select {
+    width: 100%;
+    height: 100%;
+    padding-left: 3em;
+    font-size: 14px;
+    line-height: 38px;
+    color: $brown;
+    border: 2px solid $header-black;
+    background-color: transparent;
+  }
+
+  input {
+    display: inline-block;
+    align-self: stretch;
+    vertical-align: middle;
+    appearance: none;
+
+    &[type="date"]::-webkit-inner-spin-button,
+    &[type="date"]::-webkit-calendar-picker-indicator {
+      position: absolute;
+      left: -23px;
+      top: -2px;
+      width: 100%;
+      height: 100%;
+      color: transparent;
+      background: none;
+      z-index: 1;
+      outline: none;
+    }
+
+    &[type="date"] {
+      cursor: pointer;
+    }
+
+    &::placeholder {
+      color: $brown;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  select {
+    width: 100%;
+    appearance: none;
+    cursor: pointer;
+
+    &::-ms-expand {
+      display: none;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &--date label::before {
+    background-image: url("../../img/calendar.png");
+  }
+
+  &--time label::before {
+    background-image: url("../../img/clock.png");
+  }
+
+  &--name label::before {
+    background-image: url("../../img/user.png");
+  }
+
+  &--address label::before {
+    background-image: url("../../img/geo.png");
+  }
+
+  &--phone label::before {
+    background-image: url("../../img/mobile.png");
+  }
+
+  &--date,
+  &--time,
+  &--address {
+    label::after {
+      content: "";
+      width: 10px;
+      height: 6px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 12px;
+      background: url("../img/tick.png") no-repeat;
+      pointer-events: none;
+    }
+  }
+}
+
+.form__group {
+  margin-left: -30px;
+  display: flex;
+  flex-wrap: wrap;
+
+  .form__item--date {
+    margin-left: 30px;
+    flex-grow: 1;
+    min-width: 50%;
+
+    @include media($lg-breakpoint) {
+      margin-left: 0;
+    }
+  }
+
+  .form__item--time {
+    margin-left: 30px;
+    flex-grow: 1;
+    min-width: 37%;
+  }
+
+  @include media($lg-breakpoint) {
+    margin-left: 0;
+    flex-wrap: nowrap;
+  }
+}
+
+.form__submit {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 0.4em;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 38px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  background-color: $brown;
+  box-shadow: inset 0 -3px $dark-brown;
+  border: none;
+  transition: 0.3s;
+
+  &:hover,
+  &:focus {
+    background-color: $dark-brown;
+    box-shadow: inset 0 -3px darken($dark-brown, 10%);
+    outline: none;
+  }
+
+  &:active {
+    background-color: darken($dark-brown, 10%);
+    outline: none;
+  }
+}

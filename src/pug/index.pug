@@ -1,0 +1,19 @@
+extends common/layout
+
+block title
+  title Главная страница
+
+block header
+  include includes/header
+
+block main
+  main.main
+    include includes/intro
+    include includes/categories
+    include includes/promo
+    include includes/custom
+    include includes/brands
+    include includes/fitting
+
+block footer
+  include includes/footer

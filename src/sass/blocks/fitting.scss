@@ -1,0 +1,47 @@
+.fitting {
+  background-color: $light-grey;
+}
+
+.fitting__header {
+  padding-top: 4rem;
+  padding-bottom: 5.5rem;
+  font-family: "ProximaNova", "ProximaNovaCond", "Arial", sans-serif;
+  color: $header-black;
+  text-align: center;
+  // background-image: repeating-linear-gradient(-45deg, transparent, transparent 2px, #{$light-brown} 2px, #{$light-brown} 3px);
+  background-color: rgba($light-brown, 0.4);
+
+  h2 {
+    margin-bottom: 1rem;
+    font-size: 26px;
+    line-height: 38px;
+    letter-spacing: 0.075em;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  p {
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+
+    &::after {
+      content: "";
+      width: 166px;
+      height: 2px;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: $header-black;
+    }
+  }
+}
+
+.fitting__form {
+  position: relative;
+  top: -5.5rem;
+}

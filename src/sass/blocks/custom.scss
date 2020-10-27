@@ -1,0 +1,65 @@
+.custom {
+  background-image: url("../img/middle-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  color: #ffffff;
+}
+
+.custom__inner {
+  padding: 4em 0;
+  font-size: 24px;
+  line-height: 38px;
+  letter-spacing: 0.05em;
+  font-family: "ProximaNova", "ProximaNovaCond", "Arial", sans-serif;
+  text-align: center;
+}
+
+.custom__major {
+  padding-bottom: 1em;
+  position: relative;
+  font-size: 24px;
+  text-transform: uppercase;
+
+  i {
+    display: block;
+    font-family: "Georgia", serif;
+    font-size: 28px;
+    font-style: italic;
+    text-transform: initial;
+    font-weight: 700;
+  }
+
+  b {
+    display: block;
+  }
+
+  &::after {
+    content: "";
+    width: 260px;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+  }
+}
+
+.custom__minor {
+  position: relative;
+  padding: 1em 0 2em;
+  font-family: "Georgia", serif;
+  font-style: italic;
+
+  &::after {
+    content: "";
+    width: 210px;
+    height: 14px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url("../img/wave.png");
+  }
+}

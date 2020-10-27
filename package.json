@@ -1,0 +1,59 @@
+{
+  "name": "gulp-template-1p",
+  "version": "1.0.0",
+  "description": "Шаблон для верстки - Pug + SCSS + JS(Babel)",
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/helper-module-transforms": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "browser-sync": "^2.26.13",
+    "cross-env": "^7.0.2",
+    "eslint": "^7.12.0",
+    "eslint-config-htmlacademy": "^0.6.0",
+    "eslint-config-standard": "^15.0.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.2",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-if": "^3.0.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-inject": "^5.0.5",
+    "gulp-plumber": "^1.2.1",
+    "gulp-pug": "^4.0.1",
+    "gulp-pug-linter": "^1.4.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-shorthand": "^1.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-stylelint": "^13.0.0",
+    "gulp-svgstore": "^7.0.1",
+    "gulp-uglify": "^3.0.2",
+    "gulp-w3c-html-validator": "^2.0.1",
+    "gulp-webp": "^4.0.1",
+    "stream-series": "^0.1.1",
+    "stylelint": "^13.7.2",
+    "stylelint-config-htmlacademy": "^0.1.4",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-config-standard-scss": "^1.1.0",
+    "stylelint-scss": "^3.18.0"
+  },
+  "scripts": {
+    "dev": "cross-env NODE_ENV=dev gulp",
+    "prod": "cross-env NODE_ENV=prod gulp build"
+  },
+  "browserslist": [
+    "defaults"
+  ],
+  "engines": {
+    "node": "8.15"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}

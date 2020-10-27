@@ -1,0 +1,143 @@
+.footer__top {
+  border-top: 1px solid $footer-grey-border;
+  border-bottom: 1px solid $footer-grey-border;
+  background-color: $footer-bg;
+  font-family: "ProximaNova", "ProximaNovaCond", "Arial", sans-serif;
+}
+
+.footer__top-inner {
+  @include media($md-breakpoint) {
+    display: flex;
+  }
+}
+
+.footer__nav {
+  padding: 2rem 0;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: $brown;
+
+  @include media($md-breakpoint) {
+    min-width: 24%;
+    text-align: left;
+  }
+}
+
+.footer__nav-item {
+  transition: 0.3s;
+
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  &:hover {
+    color: $dark-brown;
+  }
+}
+
+.footer__categories {
+  max-height: 300px;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: space-around;
+  font-family: "ProximaNovaCond", "Arial", sans-serif;
+  color: $footer-cat-text;
+  border-top: 1px solid $footer-grey-alt-border;
+  border-bottom: 1px solid $footer-grey-alt-border;
+
+  @include media($md-breakpoint) {
+    min-width: 42%;
+    padding: 2rem;
+    border-top: none;
+    border-bottom: none;
+    border-left: 1px solid $footer-grey-alt-border;
+    border-right: 1px solid $footer-grey-alt-border;
+  }
+}
+
+.footer__cat-item {
+  position: relative;
+  margin-bottom: 1rem;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    background-color: $footer-cat-underline;
+    transition: 0.3s;
+  }
+
+  &:hover::after {
+    background-color: $header-black;
+  }
+}
+
+.footer__info {
+  padding: 2rem 0;
+
+  @include media($md-breakpoint) {
+    padding: 2rem 0 2rem 3rem;
+  }
+}
+
+.footer__contacts {
+  margin-bottom: 2rem;
+
+  h3 {
+    margin-bottom: 1rem;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #111111;
+  }
+
+  p {
+    color: $header-black;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.1em;
+  }
+}
+
+.footer__phone a {
+  font-weight: 700;
+}
+
+.footer__email a {
+  color: $brown;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+
+.footer__bottom {
+  padding: 1rem 0;
+  background-color: $light-grey;
+}
+
+.footer__copyright {
+  font-family: "ProximaNova", "ProximaNovaCond", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  color: #828181;
+}

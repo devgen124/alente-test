@@ -1,0 +1,18 @@
+.container {
+  padding: 0 15px;
+  width: 100%;
+
+  @include media($sm-breakpoint) {
+    margin: 0 auto;
+    width: 540px;
+  }
+
+  @include media($md-breakpoint) {
+    margin: 0 auto;
+    width: 720px;
+  }
+
+  @include media($lg-breakpoint) {
+    width: 1030px;
+  }
+}

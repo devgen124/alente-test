@@ -1,0 +1,29 @@
+.social {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  &--footer {
+    justify-content: flex-start;
+
+    .social__item {
+      border-color: $brown;
+    }
+  }
+}
+
+.social__item {
+  border: 1px solid $grey;
+
+  &:not(:first-child) {
+    border-left-width: 0;
+  }
+
+  a {
+    width: 33px;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
