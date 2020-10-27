@@ -119,23 +119,23 @@
   }
 
   &--date label::before {
-    background-image: url("../../img/calendar.png");
+    background-image: url("../img/calendar.png");
   }
 
   &--time label::before {
-    background-image: url("../../img/clock.png");
+    background-image: url("../img/clock.png");
   }
 
   &--name label::before {
-    background-image: url("../../img/user.png");
+    background-image: url("../img/user.png");
   }
 
   &--address label::before {
-    background-image: url("../../img/geo.png");
+    background-image: url("../img/geo.png");
   }
 
   &--phone label::before {
-    background-image: url("../../img/mobile.png");
+    background-image: url("../img/mobile.png");
   }
 
   &--date,
