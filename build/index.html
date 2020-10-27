@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <!-- inject:css-->
+    <link rel="stylesheet" href="css/vendor/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- endinject-->
+    <!-- head:js-->
+    <!-- endinject-->
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__top">
+        <div class="container">
+          <div class="header__top-inner">
+            <div class="header__top-left">
+              <ul class="header__social social">
+                <li class="social__item"><a href="#" aria-label="Ссылка на Facebook"><img width="7" height="14" src="img/facebook.png" alt="Facebook"></a></li>
+                <li class="social__item"><a href="#" aria-label="Ссылка на VK"><img width="11" height="13" src="img/vk.png" alt="VK"></a></li>
+                <li class="social__item"><a href="#" aria-label="Ссылка на Twitter"><img width="9" height="12" src="img/twitter.png" alt="Twitter"></a></li>
+                <li class="social__item"><a href="#" aria-label="Ссылка на Google+"><img width="14" height="12" src="img/googleplus.png" alt="Google+"></a></li>
+              </ul>
+              <div class="header__location">
+                <select name="location">
+                  <option disabled>Выберите город</option>
+                  <option value="Москва" selected>Москва</option>
+                  <option value="Санкт-Петербург">Санкт-Петербург</option>
+                  <option value="Новосибирск">Новосибирск</option>
+                  <option value="Красноярск">Красноярск</option>
+                </select>
+              </div>
+            </div>
+            <div class="header__phone"><a href="tel:+74992401001">+7 (499) 240-10-01</a></div>
+            <div class="header__usermenu"><a class="header__user" href="#"><span>Войти</span></a><a class="header__cart" href="#"><span>Корзина</span><span class="header__cart-count">3</span></a></div>
+          </div>
+        </div>
+      </div>
+      <nav class="header__nav">
+        <div class="container">
+          <div class="header__nav-inner"><a class="header__logo" href="index.html"><img width="157" height="38" src="img/logo.png" alt="Лого"></a>
+            <ul class="header__nav-list">
+              <li class="header__nav-item header__nav-item--active"><a href="#">Пошив  одежды</a></li>
+              <li class="header__nav-item"><a href="#">Интернет магазин</a></li>
+              <li class="header__nav-item"><a href="#">О магазине</a></li>
+              <li class="header__nav-item"><a href="#">Блог</a></li>
+              <li class="header__nav-item"><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="intro">
+        <div class="container">
+          <div class="intro__inner">
+            <h1 class="visually-hidden">Мой костюм</h1>
+            <h2>Мода - вопрос денег. <b>Стиль - вопрос индивидуальности.</b></h2>
+          </div>
+        </div>
+      </section>
+      <section class="categories">
+        <div class="container">
+          <h2 class="visually-hidden">Категории товаров</h2>
+          <ul class="categories__list">
+            <li class="categories__item"><a href="#">Сорочки</a></li>
+            <li class="categories__item"><a href="#">Пальто</a></li>
+            <li class="categories__item"><a href="#">Обувь</a></li>
+            <li class="categories__item"><a href="#">Запонки</a></li>
+            <li class="categories__item"><a href="#">Галстуки</a></li>
+            <li class="categories__item"><a href="#">Джинсы</a></li>
+            <li class="categories__item"><a href="#">Нижнее бельё</a></li>
+            <li class="categories__item"><a href="#">Кепки</a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="promo">
+        <div class="container">
+          <h2 class="visually-hidden">Промо-ссылки</h2>
+          <ul class="promo__list">
+            <li class="promo__item promo__item--card1"><a href="#">
+                <h3>Однобортный пиджак <span class="promo__serif">Louis Purple</span></h3>
+                <p>Коллекция Весна/Лето 2015.</p></a></li>
+            <li class="promo__item promo__item--card2"><a href="#">
+                <h3>Пиджак и жилет <span class="promo__serif">Louis Purple</span></h3>
+                <p>Коллекция Весна/Лето 2015.</p></a></li>
+            <li class="promo__item promo__item--card3"><a href="#">
+                <p class="promo__brown">Процесс создания Вашей будущей сорочки – это наше совместное творчество</p></a></li>
+            <li class="promo__item promo__item--card4"><a href="#">
+                <h3>Готовая обувь <span class="promo__serif">
+                     Lo White<span class="promo__and"> и </span>Castori</span></h3>
+                <p class="promo__button">Пошив обуви на заказ</p></a></li>
+            <li class="promo__item promo__item--card5"><a href="#">
+                <h3>Запонки <span class="promo__serif">Tateossian</span></h3>
+                <p>
+                   Известный английский <br>производитель <br>аксессуаров.</p></a></li>
+            <li class="promo__item promo__item--card6 promo__item--blog"><a href="#">
+                <h3>Связать воедино: выбираем шарф! </h3>
+                <p class="promo__date">30 октября 2015</p></a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="custom">
+        <div class="container">
+          <div class="custom__inner">
+            <h2 class="visually-hidden">Костюм на заказ</h2>
+            <p class="custom__major"><i>Пошив костюма на заказ - </i>4-5 недель за готовый костюм, <b>сшитый персонально для Вас</b></p>
+            <p class="custom__minor">Готовый костюм - 1-2 дня</p>
+          </div>
+        </div>
+      </section>
+      <section class="brands">
+        <div class="container">
+          <h2 class="visually-hidden">Бренды</h2>
+          <ul class="brands__list">
+            <li class="brands__item"><img width="197" height="131" src="img/resolute.png" alt="Resolute"></li>
+            <li class="brands__item"><img width="125" height="45" src="img/castori.png" alt="Castori"></li>
+            <li class="brands__item"><img width="195" height="24" src="img/tateossian.png" alt="Tateossian"></li>
+            <li class="brands__item"><img width="85" height="62" src="img/AD56.png" alt="AD56"></li>
+            <li class="brands__item"><img width="128" height="23" src="img/lo-white.png" alt="Lo.White"></li>
+          </ul>
+        </div>
+      </section>
+      <section class="fitting">
+        <div class="fitting__header">
+          <div class="container">
+            <h2>Записаться на примерку</h2>
+            <p>Когда и во сколько вам удобно подъехать для снятие мерок?</p>
+          </div>
+        </div>
+        <div class="fitting__main">
+          <div class="container">
+            <form class="fitting__form form" action="#" method="post">
+              <div class="form__inner">
+                <div class="form__group">
+                  <div class="form__item form__item--date"><span>Выберите день</span>
+                    <label>
+                      <input type="date" name="date" value="2020-11-07">
+                    </label>
+                  </div>
+                  <div class="form__item form__item--time"><span>Выберите время</span>
+                    <label>
+                      <select name="time">
+                        <option>16:30</option>
+                        <option>17:00</option>
+                        <option>17:30</option>
+                      </select>
+                    </label>
+                  </div>
+                </div>
+                <div class="form__item form__item--address"><span>Адрес ателье</span>
+                  <label>
+                    <select name="address">
+                      <option>ул. Марата (Санкт-Петербург)</option>
+                      <option>ул. Московский проспект (Санкт-Петербург)</option>
+                    </select>
+                  </label>
+                </div>
+                <div class="form__item form__item--name"><span>Представьтесь пожалуйста</span>
+                  <label>
+                    <input type="text" placeholder="Напишите своё имя">
+                  </label>
+                </div>
+                <div class="form__item form__item--phone"><span>Ваш контактный телефон</span>
+                  <label>
+                    <input type="tel" value="+7 850 345 789 12">
+                  </label>
+                </div>
+                <button class="form__submit" type="submit">Записаться</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="container">
+          <div class="footer__top-inner">
+            <ul class="footer__nav">
+              <li class="footer__nav-item"><a href="#">Пошив одежды</a></li>
+              <li class="footer__nav-item"><a href="#">Каталог</a></li>
+              <li class="footer__nav-item"><a href="#">О магазине</a></li>
+              <li class="footer__nav-item"><a href="#">Блог</a></li>
+              <li class="footer__nav-item"><a href="#">Партнёрам</a></li>
+            </ul>
+            <ul class="footer__categories">
+              <li class="footer__cat-item"><a href="">Костюмы</a></li>
+              <li class="footer__cat-item"><a href="">Сорочки</a></li>
+              <li class="footer__cat-item"><a href="">Пальто</a></li>
+              <li class="footer__cat-item"><a href="">Обувь</a></li>
+              <li class="footer__cat-item"><a href="">Запонки</a></li>
+              <li class="footer__cat-item"><a href="">Галстуки</a></li>
+              <li class="footer__cat-item"><a href="">Джинсы</a></li>
+              <li class="footer__cat-item"><a href="">Нижнее бельё</a></li>
+              <li class="footer__cat-item"><a href="">Кепки</a></li>
+            </ul>
+            <div class="footer__info">
+              <div class="footer__contacts">
+                <h3>Контакты:</h3>
+                <p class="footer__address">Адрес: Студенческая улица, 20</p>
+                <p class="footer__phone">тел: <a href="tel:+74992401001">+7 (499) 240-10-01</a></p>
+                <p class="footer__email">
+                   e-mail: <a href="mailto:info@my-suit.ru">info@my-suit.ru</a></p>
+              </div>
+              <ul class="footer__social social social--footer">
+                <li class="social__item"><a href="#" aria-label="Ссылка на Facebook"><img width="7" height="14" src="img/facebook-footer.png" alt="Facebook"></a></li>
+                <li class="social__item"><a href="#" aria-label="Ссылка на VK"><img width="11" height="13" src="img/vk-footer.png" alt="VK"></a></li>
+                <li class="social__item"><a href="#" aria-label="Ссылка на Twitter"><img width="9" height="12" src="img/twitter-footer.png" alt="Twitter"></a></li>
+                <li class="social__item"><a href="#" aria-label="Ссылка на Google+"><img width="14" height="12" src="img/googleplus-footer.png" alt="Google+"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <p class="footer__copyright">Copywrite Еtrusci, Ltd 2015-2016 All rights preserved</p>
+        </div>
+      </div>
+    </footer>
+    <!-- inject:js-->
+    <!-- endinject-->
+  </body>
+</html>
