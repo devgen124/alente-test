@@ -35,6 +35,7 @@ const svgstore = require('gulp-svgstore');
 
 const bSync = require('browser-sync').create();
 const rename = require('gulp-rename');
+const replace = require('gulp-replace');
 const gulpif = require('gulp-if');
 const clean = require('gulp-clean');
 const env = process.env.NODE_ENV;
@@ -64,6 +65,7 @@ const mainCss = () => {
     .pipe(gulpif(env === 'dev', sourcemaps.init()))
     .pipe(sassGlob())
     .pipe(sass().on('error', sass.logError))
+    .pipe(replace('../../img', '../img'))
     .pipe(autoprefixer({
       grid: 'autoplace'
     }))
@@ -101,6 +103,7 @@ const html = () => {
     .pipe(pug({
       pretty: true
     }))
+    .pipe(replace('../../img', 'img'))
     .pipe(htmlValidator())
     .pipe(gulp.dest(DEST));
 }
