@@ -7,7 +7,7 @@ const plumber = require('gulp-plumber');
 const pugLinter = require('gulp-pug-linter');
 const htmlValidator = require('gulp-w3c-html-validator');
 
-// inject styles ans scripts
+// inject styles and scripts
 
 const inject = require('gulp-inject');
 const streamSeries = require('stream-series');
@@ -19,6 +19,7 @@ const sassGlob = require('gulp-sass-glob');
 const autoprefixer = require('gulp-autoprefixer');
 const cleanCss = require('gulp-clean-css');
 const sourcemaps = require('gulp-sourcemaps');
+const cssbeautify = require('gulp-cssbeautify');
 
 // js
 
@@ -69,6 +70,7 @@ const mainCss = () => {
     .pipe(autoprefixer({
       grid: 'autoplace'
     }))
+    .pipe(gulpif(env === 'dev', cssbeautify({indent: '  '})))
     .pipe(gulpif(env === 'prod', cleanCss()))
     .pipe(gulpif(env === 'dev', sourcemaps.write()))
     .pipe(gulp.dest(`${DEST}/css`))
