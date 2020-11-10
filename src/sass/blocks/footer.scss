@@ -42,30 +42,30 @@
 }
 
 .footer__categories {
-  max-height: 300px;
-  padding: 2rem 0;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  align-content: space-around;
+  padding: 2rem;
+  column-count: 2;
   font-family: "ProximaNovaCond", "Arial", sans-serif;
   color: $footer-cat-text;
   border-top: 1px solid $footer-grey-alt-border;
   border-bottom: 1px solid $footer-grey-alt-border;
 
   @include media($md-breakpoint) {
-    min-width: 42%;
-    padding: 2rem;
     border-top: none;
     border-bottom: none;
     border-left: 1px solid $footer-grey-alt-border;
     border-right: 1px solid $footer-grey-alt-border;
   }
+
+  @include media($lg-breakpoint) {
+    padding: 2rem 4rem;
+    // column-width: 180px;
+    width: 40%;
+  }
 }
 
 .footer__cat-item {
   margin-bottom: 1rem;
+  // max-width: 40%;
   font-size: 15px;
   line-height: 30px;
   letter-spacing: 0.1em;

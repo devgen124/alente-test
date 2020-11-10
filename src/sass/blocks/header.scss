@@ -216,11 +216,11 @@
 .header__logo {
   margin-bottom: 1rem;
   flex: 0 0 auto;
-  align-self: flex-start;
 
   @include media($md-breakpoint) {
     margin-bottom: 0;
     margin-right: 1.5rem;
+    align-self: flex-start;
   }
 }
 
