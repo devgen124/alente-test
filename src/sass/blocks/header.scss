@@ -215,6 +215,8 @@
 
 .header__logo {
   margin-bottom: 1rem;
+  flex: 0 0 auto;
+  align-self: flex-start;
 
   @include media($md-breakpoint) {
     margin-bottom: 0;
@@ -225,7 +227,9 @@
 .header__nav-list {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   font-size: 15px;
   letter-spacing: 0.12em;
   font-weight: 600;
