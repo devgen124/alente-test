@@ -17,20 +17,14 @@ header.header
               a(href="#" aria-label="Ссылка на Google+")
                 img(width="14", height="12", src="img/googleplus.png", alt="Google+")
           .header__location
-            select(name="location")
-              option(disabled) Выберите город
-              option(value="Москва" selected) Москва
-              option(value="Санкт-Петербург") Санкт-Петербург
-              option(value="Новосибирск") Новосибирск
-              option(value="Красноярск") Красноярск
+            a(href="#") Москва
         .header__phone
           a(href="tel:+74992401001") +7 (499) 240-10-01
         .header__usermenu
-          a.header__user(href="#")
-            span Войти
-          a.header__cart(href="#")
-            span Корзина
-            span.header__cart-count 3
+          .header__user
+            a(href="#") Войти
+          .header__cart
+            a(href="#" data-count="3") Корзина
   nav.header__nav
     .container
       .header__nav-inner

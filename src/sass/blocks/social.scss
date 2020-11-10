@@ -1,15 +1,7 @@
 .social {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-
-  &--footer {
-    justify-content: flex-start;
-
-    .social__item {
-      border-color: $brown;
-    }
-  }
+  // flex-wrap: wrap;
 }
 
 .social__item {
@@ -25,5 +17,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.3s;
+
+    &:hover,
+    &:focus {
+      background-color: rgba($grey, 0.3);
+      outline: none;
+    }
+  }
+}
+
+.social--footer {
+  justify-content: flex-start;
+
+  .social__item {
+    border-color: $brown;
+
+    &:hover,
+    &:focus {
+      background-color: rgba($brown, 0.3);
+    }
   }
 }

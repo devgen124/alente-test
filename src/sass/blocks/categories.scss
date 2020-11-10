@@ -39,9 +39,11 @@
     text-align: center;
     transition: 0.3s;
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: $brown;
       box-shadow: inset 0 0 0 2px $brown;
+      outline: none;
     }
   }
 }

@@ -117,6 +117,10 @@
 
 .footer__phone a {
   font-weight: 700;
+
+  &:hover {
+    color: lighten($header-black, 30%);
+  }
 }
 
 .footer__email a {

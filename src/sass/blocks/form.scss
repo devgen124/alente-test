@@ -30,9 +30,10 @@
 }
 
 .form__item {
+  display: block;
   margin-bottom: 1.5rem;
 
-  span {
+  &-title {
     margin-bottom: 0.5em;
     display: block;
     font-family: "Georgia", serif;
@@ -43,18 +44,19 @@
     color: $header-black;
   }
 
-  label {
+  &-wrapper {
     height: 40px;
     position: relative;
     display: flex;
 
     &::before {
       content: "";
-      width: 3rem;
-      height: 100%;
+      width: 16px;
+      height: 16px;
       position: absolute;
-      top: 0;
-      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 10px;
       background-position: center;
       background-repeat: no-repeat;
     }
@@ -64,12 +66,18 @@
   select {
     width: 100%;
     height: 100%;
-    padding-left: 3em;
+    padding-left: 38px;
     font-size: 14px;
     line-height: 38px;
     color: $brown;
     border: 2px solid $header-black;
     background-color: transparent;
+    transition: 0.3s;
+
+    &:focus,
+    &:hover {
+      box-shadow: 0 0 3px $header-black;
+    }
   }
 
   input {
@@ -118,30 +126,30 @@
     }
   }
 
-  &--date label::before {
-    background-image: url("../img/calendar.png");
+  &--date &-wrapper::before {
+    background-image: url("../img/calendar.svg");
   }
 
-  &--time label::before {
-    background-image: url("../img/clock.png");
+  &--time &-wrapper::before {
+    background-image: url("../img/clock.svg");
   }
 
-  &--name label::before {
-    background-image: url("../img/user.png");
+  &--name &-wrapper::before {
+    background-image: url("../img/user.svg");
   }
 
-  &--address label::before {
-    background-image: url("../img/geo.png");
+  &--address &-wrapper::before {
+    background-image: url("../img/geo.svg");
   }
 
-  &--phone label::before {
-    background-image: url("../img/mobile.png");
+  &--phone &-wrapper::before {
+    background-image: url("../img/mobile.svg");
   }
 
   &--date,
   &--time,
   &--address {
-    label::after {
+    .form__item-wrapper::after {
       content: "";
       width: 10px;
       height: 6px;
@@ -190,7 +198,7 @@
   font-size: 18px;
   line-height: 38px;
   font-weight: 700;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   background-color: $brown;
   box-shadow: inset 0 -3px $dark-brown;

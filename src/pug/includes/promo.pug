@@ -2,38 +2,39 @@ section.promo
   .container
     h2.visually-hidden Промо-ссылки
     ul.promo__list
-      li.promo__item.promo__item--card1
-        a(href="#")
+      li.promo__item.tile(style="background-image: url(img/card1.jpg);")
+        a.tile__link(href="#")
           h3 Однобортный пиджак 
-            span.promo__serif Louis Purple
-          p Коллекция Весна/Лето 2015.
-      li.promo__item.promo__item--card2
-        a(href="#")
+            span.tile__serif Louis Purple
+          p.tile__undertext Коллекция Весна/Лето 2015.
+      li.promo__item.tile(style="background-image: url(img/card2.jpg);")
+        a.tile__link(href="#")
           h3 Пиджак и жилет 
-            span.promo__serif Louis Purple
-          p Коллекция Весна/Лето 2015.
-      li.promo__item.promo__item--card3
-        a(href="#")
-          p.promo__brown Процесс создания Вашей будущей сорочки – это наше совместное творчество
-      li.promo__item.promo__item--card4
-        a(href="#")
+            span.tile__serif Louis Purple
+          p.tile__undertext Коллекция Весна/Лето 2015.
+      li.promo__item.tile(style="background-image: url(img/card3.jpg);")
+        a.tile__link(href="#")
+          p.tile__brown Процесс создания Вашей будущей сорочки – это наше совместное творчество
+      li.promo__item.tile(style="background-image: url(img/card4.jpg);")
+        a.tile__link(href="#")
           h3 Готовая обувь 
-            span.promo__serif 
+            span.tile__serif 
               | Lo White
-              span.promo__and  и 
+              span.tile__and  и 
               | Castori
-          p.promo__button Пошив обуви на заказ
-      li.promo__item.promo__item--card5
-        a(href="#")
+          p.tile__button Пошив обуви на заказ
+      li.promo__item.tile(style="background-image: url(img/card5.jpg);")
+        a.tile__link(href="#")
           h3 Запонки 
-            span.promo__serif Tateossian
-          p 
+            span.tile__serif Tateossian
+          p.tile__undertext 
             | Известный английский 
             br
             | производитель 
             br
             | аксессуаров.
-      li.promo__item.promo__item--card6.promo__item--blog
-        a(href="#")
+      li.promo__item.tile.tile--blog(style="background-image: url(img/card6.jpg);")
+        a.tile__link(href="#")
           h3 Связать воедино: выбираем шарф! 
-          p.promo__date 30 октября 2015
+          time.tile__date 30 октября | 2015
+        .tile__bg.tile__bg--card6

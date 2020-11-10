@@ -23,18 +23,13 @@
                 <li class="social__item"><a href="#" aria-label="Ссылка на Twitter"><img width="9" height="12" src="img/twitter.png" alt="Twitter"></a></li>
                 <li class="social__item"><a href="#" aria-label="Ссылка на Google+"><img width="14" height="12" src="img/googleplus.png" alt="Google+"></a></li>
               </ul>
-              <div class="header__location">
-                <select name="location">
-                  <option disabled>Выберите город</option>
-                  <option value="Москва" selected>Москва</option>
-                  <option value="Санкт-Петербург">Санкт-Петербург</option>
-                  <option value="Новосибирск">Новосибирск</option>
-                  <option value="Красноярск">Красноярск</option>
-                </select>
-              </div>
+              <div class="header__location"><a href="#">Москва</a></div>
             </div>
             <div class="header__phone"><a href="tel:+74992401001">+7 (499) 240-10-01</a></div>
-            <div class="header__usermenu"><a class="header__user" href="#"><span>Войти</span></a><a class="header__cart" href="#"><span>Корзина</span><span class="header__cart-count">3</span></a></div>
+            <div class="header__usermenu">
+              <div class="header__user"><a href="#">Войти</a></div>
+              <div class="header__cart"><a href="#" data-count="3">Корзина</a></div>
+            </div>
           </div>
         </div>
       </div>
@@ -56,8 +51,8 @@
       <section class="intro">
         <div class="container">
           <div class="intro__inner">
-            <h1 class="visually-hidden">Мой костюм</h1>
-            <h2>Мода - вопрос денег. <b>Стиль - вопрос индивидуальности.</b></h2>
+            <h1 class="visually-hidden">Мой костюм. Сеть ателье</h1>
+            <div class="intro__motto">Мода - вопрос денег. <strong>Стиль - вопрос индивидуальности.</strong></div>
           </div>
         </div>
       </section>
@@ -80,25 +75,27 @@
         <div class="container">
           <h2 class="visually-hidden">Промо-ссылки</h2>
           <ul class="promo__list">
-            <li class="promo__item promo__item--card1"><a href="#">
-                <h3>Однобортный пиджак <span class="promo__serif">Louis Purple</span></h3>
-                <p>Коллекция Весна/Лето 2015.</p></a></li>
-            <li class="promo__item promo__item--card2"><a href="#">
-                <h3>Пиджак и жилет <span class="promo__serif">Louis Purple</span></h3>
-                <p>Коллекция Весна/Лето 2015.</p></a></li>
-            <li class="promo__item promo__item--card3"><a href="#">
-                <p class="promo__brown">Процесс создания Вашей будущей сорочки – это наше совместное творчество</p></a></li>
-            <li class="promo__item promo__item--card4"><a href="#">
-                <h3>Готовая обувь <span class="promo__serif">
-                     Lo White<span class="promo__and"> и </span>Castori</span></h3>
-                <p class="promo__button">Пошив обуви на заказ</p></a></li>
-            <li class="promo__item promo__item--card5"><a href="#">
-                <h3>Запонки <span class="promo__serif">Tateossian</span></h3>
-                <p>
+            <li class="promo__item tile" style="background-image: url(img/card1.jpg);"><a class="tile__link" href="#">
+                <h3>Однобортный пиджак <span class="tile__serif">Louis Purple</span></h3>
+                <p class="tile__undertext">Коллекция Весна/Лето 2015.</p></a></li>
+            <li class="promo__item tile" style="background-image: url(img/card2.jpg);"><a class="tile__link" href="#">
+                <h3>Пиджак и жилет <span class="tile__serif">Louis Purple</span></h3>
+                <p class="tile__undertext">Коллекция Весна/Лето 2015.</p></a></li>
+            <li class="promo__item tile" style="background-image: url(img/card3.jpg);"><a class="tile__link" href="#">
+                <p class="tile__brown">Процесс создания Вашей будущей сорочки – это наше совместное творчество</p></a></li>
+            <li class="promo__item tile" style="background-image: url(img/card4.jpg);"><a class="tile__link" href="#">
+                <h3>Готовая обувь <span class="tile__serif">
+                     Lo White<span class="tile__and"> и </span>Castori</span></h3>
+                <p class="tile__button">Пошив обуви на заказ</p></a></li>
+            <li class="promo__item tile" style="background-image: url(img/card5.jpg);"><a class="tile__link" href="#">
+                <h3>Запонки <span class="tile__serif">Tateossian</span></h3>
+                <p class="tile__undertext">
                    Известный английский <br>производитель <br>аксессуаров.</p></a></li>
-            <li class="promo__item promo__item--card6 promo__item--blog"><a href="#">
+            <li class="promo__item tile tile--blog" style="background-image: url(img/card6.jpg);"><a class="tile__link" href="#">
                 <h3>Связать воедино: выбираем шарф! </h3>
-                <p class="promo__date">30 октября 2015</p></a></li>
+                <time class="tile__date">30 октября | 2015</time></a>
+              <div class="tile__bg tile__bg--card6"></div>
+            </li>
           </ul>
         </div>
       </section>
@@ -135,39 +132,24 @@
             <form class="fitting__form form" action="#" method="post">
               <div class="form__inner">
                 <div class="form__group">
-                  <div class="form__item form__item--date"><span>Выберите день</span>
-                    <label>
-                      <input type="date" name="date" value="2020-11-07">
-                    </label>
-                  </div>
-                  <div class="form__item form__item--time"><span>Выберите время</span>
-                    <label>
+                  <label class="form__item form__item--date"><span class="form__item-title">Выберите день</span><span class="form__item-wrapper">
+                      <input type="date" name="date" value="2020-11-07"></span></label>
+                  <label class="form__item form__item--time"><span class="form__item-title">Выберите время</span><span class="form__item-wrapper">
                       <select name="time">
                         <option>16:30</option>
                         <option>17:00</option>
                         <option>17:30</option>
-                      </select>
-                    </label>
-                  </div>
+                      </select></span></label>
                 </div>
-                <div class="form__item form__item--address"><span>Адрес ателье</span>
-                  <label>
+                <label class="form__item form__item--address"><span class="form__item-title">Адрес ателье</span><span class="form__item-wrapper">
                     <select name="address">
                       <option>ул. Марата (Санкт-Петербург)</option>
                       <option>ул. Московский проспект (Санкт-Петербург)</option>
-                    </select>
-                  </label>
-                </div>
-                <div class="form__item form__item--name"><span>Представьтесь пожалуйста</span>
-                  <label>
-                    <input type="text" placeholder="Напишите своё имя">
-                  </label>
-                </div>
-                <div class="form__item form__item--phone"><span>Ваш контактный телефон</span>
-                  <label>
-                    <input type="tel" value="+7 850 345 789 12">
-                  </label>
-                </div>
+                    </select></span></label>
+                <label class="form__item form__item--name"><span class="form__item-title">Представьтесь пожалуйста</span><span class="form__item-wrapper">
+                    <input type="text" placeholder="Напишите своё имя" minlength="4" required></span></label>
+                <label class="form__item form__item--phone"><span class="form__item-title">Ваш контактный телефон</span><span class="form__item-wrapper">
+                    <input type="tel" placeholder="+7 850 345 789 12" required></span></label>
                 <button class="form__submit" type="submit">Записаться</button>
               </div>
             </form>
@@ -187,15 +169,15 @@
               <li class="footer__nav-item"><a href="#">Партнёрам</a></li>
             </ul>
             <ul class="footer__categories">
-              <li class="footer__cat-item"><a href="">Костюмы</a></li>
-              <li class="footer__cat-item"><a href="">Сорочки</a></li>
-              <li class="footer__cat-item"><a href="">Пальто</a></li>
-              <li class="footer__cat-item"><a href="">Обувь</a></li>
-              <li class="footer__cat-item"><a href="">Запонки</a></li>
-              <li class="footer__cat-item"><a href="">Галстуки</a></li>
-              <li class="footer__cat-item"><a href="">Джинсы</a></li>
-              <li class="footer__cat-item"><a href="">Нижнее бельё</a></li>
-              <li class="footer__cat-item"><a href="">Кепки</a></li>
+              <li class="footer__cat-item"><a href="#">Костюмы</a></li>
+              <li class="footer__cat-item"><a href="#">Сорочки</a></li>
+              <li class="footer__cat-item"><a href="#">Пальто</a></li>
+              <li class="footer__cat-item"><a href="#">Обувь</a></li>
+              <li class="footer__cat-item"><a href="#">Запонки</a></li>
+              <li class="footer__cat-item"><a href="#">Галстуки</a></li>
+              <li class="footer__cat-item"><a href="#">Джинсы</a></li>
+              <li class="footer__cat-item"><a href="#">Нижнее бельё</a></li>
+              <li class="footer__cat-item"><a href="#">Кепки</a></li>
             </ul>
             <div class="footer__info">
               <div class="footer__contacts">

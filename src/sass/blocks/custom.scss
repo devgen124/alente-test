@@ -19,6 +19,9 @@
   padding-bottom: 1em;
   position: relative;
   font-size: 24px;
+  line-height: 38px;
+  letter-spacing: 0.05em;
+  font-weight: 600;
   text-transform: uppercase;
 
   i {
@@ -50,6 +53,9 @@
   position: relative;
   padding: 1em 0 2em;
   font-family: "Georgia", serif;
+  font-size: 20px;
+  line-height: 38px;
+  letter-spacing: 0.05em;
   font-style: italic;
 
   &::after {
