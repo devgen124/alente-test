@@ -265,16 +265,12 @@
       height: 1px;
       border-bottom: 1px dashed $grey;
     }
-
-    &:hover::after,
-    &:focus::after {
-      content: "";
-      border-bottom: 1px solid $grey;
-    }
   }
 
   &:not(&--active) a:hover::after,
   &:not(&--active) a:focus::after {
+    content: "";
+    border-bottom: 1px solid $grey;
     animation: 0.3s underline;
   }
 
