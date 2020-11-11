@@ -3,13 +3,9 @@
   display: flex;
   flex-direction: column;
 
-  @include media($md-breakpoint) {
+  @include media($sm-breakpoint) {
     margin-right: -8px;
     flex-direction: row;
     flex-wrap: wrap;
   }
-}
-
-.promo__item {
-  margin-bottom: 8px;
 }

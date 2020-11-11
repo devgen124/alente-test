@@ -1,24 +1,19 @@
 .tile {
-  position: relative;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top center;
+  padding: 0 8px 8px 0;
 
-  @include media($md-breakpoint) {
-    margin-right: 8px;
-    width: calc(50% - 8px);
+  @include media($sm-breakpoint) {
+    width: calc(100% / 2);
   }
 
   @include media($lg-breakpoint) {
-    margin-right: 8px;
-    width: calc(33.3% - 8px);
+    width: calc(100% / 3);
   }
 }
 
 .tile__link {
+  position: relative;
   min-height: 330px;
   height: 100%;
-  position: relative;
   z-index: 2;
   display: flex;
   flex-direction: column;
@@ -26,6 +21,9 @@
   justify-content: center;
   padding: 30px;
   background-color: rgba(white, 0.1);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
   color: white;
   font-family: "ProximaNova", "ProximaNovaCond", "Arial", sans-serif;
   transition: 0.3s;
@@ -143,7 +141,7 @@
     padding: 0 1em;
     position: absolute;
     z-index: 3;
-    right: -4px;
+    right: 4px;
     top: 17px;
     display: flex;
     align-items: center;
@@ -161,7 +159,7 @@
     width: 0;
     height: 0;
     position: absolute;
-    right: -4px;
+    right: 4px;
     top: 47px;
     border-top: 2px solid $dark-brown;
     border-left: 2px solid $dark-brown;
