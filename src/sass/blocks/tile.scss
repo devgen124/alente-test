@@ -1,5 +1,9 @@
 .tile {
   padding: 0 8px 8px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  background-clip: content-box;
 
   @include media($sm-breakpoint) {
     width: calc(100% / 2);
@@ -20,12 +24,9 @@
   align-items: center;
   justify-content: center;
   padding: 30px;
-  background-color: rgba(white, 0.1);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top center;
   color: white;
   font-family: "ProximaNova", "ProximaNovaCond", "Arial", sans-serif;
+  background-color: rgba(white, 0.2);
   transition: 0.3s;
 
   &:hover,
