@@ -5,11 +5,7 @@
   font-family: "ProximaNova", "ProximaNovaCond", "Arial", sans-serif;
 
   @include media($md-breakpoint) {
-    padding: 2rem 7rem;
-  }
-
-  @include media($lg-breakpoint) {
-    padding: 3rem 190px;
+    padding: 3rem 5rem;
 
     .form__inner {
       display: flex;
@@ -18,14 +14,18 @@
 
     .form__group,
     .form__item--name {
-      width: 300px;
-      margin-right: 50px;
+      width: 55%;
+      padding-right: 5%;
     }
 
     .form__item--address,
     .form__item--phone {
-      width: calc(100% - 350px);
+      width: 45%;
     }
+  }
+
+  @include media($lg-breakpoint) {
+    padding: 3rem 190px;
   }
 }
 
@@ -173,7 +173,7 @@
     flex-grow: 1;
     min-width: 50%;
 
-    @include media($lg-breakpoint) {
+    @include media($md-breakpoint) {
       margin-left: 0;
     }
   }
@@ -184,7 +184,7 @@
     min-width: 37%;
   }
 
-  @include media($lg-breakpoint) {
+  @include media($md-breakpoint) {
     margin-left: 0;
     flex-wrap: nowrap;
   }
