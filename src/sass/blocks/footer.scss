@@ -58,14 +58,13 @@
 
   @include media($lg-breakpoint) {
     padding: 2rem 4rem;
-    // column-width: 180px;
     width: 40%;
   }
 }
 
 .footer__cat-item {
   margin-bottom: 1rem;
-  // max-width: 40%;
+  break-inside: avoid;
   font-size: 15px;
   line-height: 30px;
   letter-spacing: 0.1em;

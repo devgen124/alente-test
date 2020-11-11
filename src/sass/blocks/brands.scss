@@ -20,7 +20,7 @@
   padding: 1rem 0;
 
   &:not(:last-child) {
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 
     @include media($md-breakpoint) {
       margin-bottom: 0;

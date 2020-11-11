@@ -6,18 +6,17 @@
   margin-bottom: -1em;
   padding: 2rem 0;
   font-family: "ProximaNova", "ProximaNovaCond", "Arial", sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
+  columns: 2;
   font-size: 14px;
   font-weight: 800;
   text-transform: uppercase;
 
   @include media($md-breakpoint) {
     margin-right: -1em;
-    flex-direction: row;
+    display: flex;
+    align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
   }
 
   @include media($lg-breakpoint) {
@@ -27,6 +26,7 @@
 
 .categories__item {
   margin-bottom: 1em;
+  break-inside: avoid;
 
   @include media($md-breakpoint) {
     margin-right: 1em;

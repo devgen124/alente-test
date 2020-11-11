@@ -1,10 +1,10 @@
 .promo__list {
+  margin-right: -8px;
   margin-bottom: 8px;
   display: flex;
   flex-direction: column;
 
   @include media($sm-breakpoint) {
-    margin-right: -8px;
     flex-direction: row;
     flex-wrap: wrap;
   }
